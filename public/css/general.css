@@ -1,0 +1,101 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&family=Roboto:wght@100;300&display=swap');
+
+
+
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+  }
+  
+  *{
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+/* Estilos para tablets*/
+@media screen and (min-width: 541px) {
+  header .search-bar{
+    justify-content: space-between;
+  }
+  
+  header nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+      .search-bar .container-logo{
+        margin: 0;
+        width: 30%;
+      }
+      .search-bar .barra {
+        width: 33%;
+        padding-left: 7px;}
+        header .search-bar h3 {     
+          width: 33%;
+          font-size: 18px;
+        }
+        
+      
+  main section  .container-articulos .detalle{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  width: 49%;
+  }
+
+  
+  .burger-menu{
+      display: none;
+  }
+  
+  .container-articulos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between
+  } 
+}
+
+
+/* Estilos para desktop*/
+@media screen and (min-width: 1024px) {
+
+  header .search-bar{
+  
+  justify-content: space-between;
+}
+
+  header .search-bar h3 {     
+    width: 33%;
+    font-size: 18px;
+  }
+  main section .detalle{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  header nav{
+    display: flex;
+    justify-content: space-between;;
+  }
+  .burger-menu{
+      display: none;
+  }
+
+  .container-articulos{
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;  
+  }
+}
