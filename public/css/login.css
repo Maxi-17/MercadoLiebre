@@ -1,0 +1,33 @@
+/*Estilos adicionales*/
+
+.container-form:hover {
+    background-color: #3852be;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.copyright {
+    margin-top: 10px; /* Para ajusta el espacio entre el contenido y el copyright */
+}
